@@ -1,0 +1,14 @@
+# Python / Virtual Environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# MLX Model Checkpoints & Large Files (Keep code & results only)
+adapters/
+fused_model/
+*.safetensors
+*.bin
+
+# Local Environment & Logs
+.DS_Store

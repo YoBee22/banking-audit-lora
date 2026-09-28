@@ -1,0 +1,66 @@
+Loading ./fused_model...
+[1/20] PASS: Extracted valid JSON
+[2/20] PASS: Extracted valid JSON
+[3/20] PASS: Extracted valid JSON
+[4/20] PASS: Extracted valid JSON
+[5/20] PASS: Extracted valid JSON
+[6/20] FAIL: Non-JSON Output
+--- Raw Output ---
+```json
+{
+  "transaction_type": "High-Value International Wire Transfer",
+  "amount": 150000,
+  "destination_country": "Offshore Jurisdiction",
+  "risk_flags": [
+    "Potential PEP Linkage",
+    "Velocity Checks"
+  ],
+  "compliance_status": "Cleared",
+  "compliance_action": "Legitimate Business Activity",
+  "audit_notes": [
+    {
+      "note_id": 1,
+      "description": "Client initiated high-value international wire transfer",
+      "risk_level": "Medium"
+    },
+    {
+      "note_id": 2,
+      "description": "System flagged for potential PEP linkage and velocity checks",
+      "risk_level": "High"
+    },
+    {
+      "note_id": 3,
+      "description": "Compliance officer reviewed enhanced due diligence documents",
+      "risk_level": "Low"
+    },
+    {
+      "note_id": 4,
+      "description": "Confirmed source of wealth",
+      "risk_level": "Low"
+    },
+    {
+      "note_id": 5,
+      "description": "Cleared the transaction as legitimate business activity",
+      "risk_level": "Low"
+
+------------------
+[7/20] PASS: Extracted valid JSON
+[8/20] PASS: Extracted valid JSON
+[9/20] PASS: Extracted valid JSON
+[10/20] PASS: Extracted valid JSON
+[11/20] PASS: Extracted valid JSON
+[12/20] PASS: Extracted valid JSON
+[13/20] PASS: Extracted valid JSON
+[14/20] PASS: Extracted valid JSON
+[15/20] PASS: Extracted valid JSON
+[16/20] PASS: Extracted valid JSON
+[17/20] PASS: Extracted valid JSON
+[18/20] PASS: Extracted valid JSON
+[19/20] PASS: Extracted valid JSON
+[20/20] PASS: Extracted valid JSON
+
+==========================================
+Model: ./fused_model
+Valid JSON Accuracy: 95.0% (19/20)
+==========================================
+
